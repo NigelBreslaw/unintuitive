@@ -1,0 +1,33 @@
+name: main-ci
+
+on:
+    push:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 1
+    steps:
+      - uses: actions/checkout@v4.1.1
+    #   - uses: pnpm/action-setup@v2.4.0
+    #     with:
+    #       version: 8.14.1
+    #   - name: install dependencies
+    #     run: cd gg-mono && pnpm install --frozen-lockfile
+    #   - name: lint
+    #     run: cd gg-mono && pnpm lint
+    #   - name: format
+    #     run: cd gg-mono && pnpm format:check
+    #   - name: build
+    #     run: cd gg-mono && pnpm build
+    #   - name: install dependencies
+    #     run: cd native_gg && pnpm install --frozen-lockfile
+    #   - name: lint
+    #     run: cd native_gg && pnpm lint
+    #   - name: format
+    #     run: cd native_gg && pnpm format:check
+     
+
+ 
