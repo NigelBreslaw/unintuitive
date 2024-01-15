@@ -359,13 +359,6 @@ declare module 'astro:content' {
   collection: "page";
   data: InferEntrySchema<"page">
 } & { render(): Render[".mdx"] };
-"shop.mdx": {
-	id: "shop.mdx";
-  slug: "shop";
-  body: string;
-  collection: "page";
-  data: InferEntrySchema<"page">
-} & { render(): Render[".mdx"] };
 };
 "product": {
 "buy-me-a-cocktail.mdx": {
@@ -513,13 +506,6 @@ declare module 'astro:content' {
 "project-a.mdx": {
 	id: "project-a.mdx";
   slug: "project-a";
-  body: string;
-  collection: "project";
-  data: InferEntrySchema<"project">
-} & { render(): Render[".mdx"] };
-"unveiling-the-galactic-pluche-collection.mdx": {
-	id: "unveiling-the-galactic-pluche-collection.mdx";
-  slug: "unveiling-the-galactic-pluche-collection";
   body: string;
   collection: "project";
   data: InferEntrySchema<"project">
