@@ -205,41 +205,34 @@ declare module 'astro:content' {
   collection: "page";
   data: InferEntrySchema<"page">
 } & { render(): Render[".mdx"] };
-"license.mdx": {
-	id: "license.mdx";
-  slug: "license";
-  body: string;
-  collection: "page";
-  data: InferEntrySchema<"page">
-} & { render(): Render[".mdx"] };
 };
 "product": {
 };
 "project": {
-"berry-forest-2013.mdx": {
-	id: "berry-forest-2013.mdx";
-  slug: "berry-forest-2013";
+"a-guardian-ghost.mdx": {
+	id: "a-guardian-ghost.mdx";
+  slug: "a-guardian-ghost";
   body: string;
   collection: "project";
   data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
-"crafting-the-perfect-cosmic-mojito.mdx": {
-	id: "crafting-the-perfect-cosmic-mojito.mdx";
-  slug: "crafting-the-perfect-cosmic-mojito";
+"b-ishtar-commander.mdx": {
+	id: "b-ishtar-commander.mdx";
+  slug: "b-ishtar-commander";
   body: string;
   collection: "project";
   data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
-"ishtar-legacy.mdx": {
-	id: "ishtar-legacy.mdx";
-  slug: "ishtar-legacy";
+"c-ishtar-legacy.mdx": {
+	id: "c-ishtar-legacy.mdx";
+  slug: "c-ishtar-legacy";
   body: string;
   collection: "project";
   data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
-"project-a.mdx": {
-	id: "project-a.mdx";
-  slug: "project-a";
+"d-berry-forest-2013.mdx": {
+	id: "d-berry-forest-2013.mdx";
+  slug: "d-berry-forest-2013";
   body: string;
   collection: "project";
   data: InferEntrySchema<"project">
