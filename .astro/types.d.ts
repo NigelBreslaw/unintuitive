@@ -19,8 +19,6 @@ declare module 'astro:content' {
 }
 
 declare module 'astro:content' {
-	export { z } from 'astro/zod';
-
 	type Flatten<T> = T extends { [K: string]: infer U } ? U : never;
 
 	export type CollectionKey = keyof AnyEntryMap;
@@ -28,53 +26,6 @@ declare module 'astro:content' {
 
 	export type ContentCollectionKey = keyof ContentEntryMap;
 	export type DataCollectionKey = keyof DataEntryMap;
-
-	// This needs to be in sync with ImageMetadata
-	export type ImageFunction = () => import('astro/zod').ZodObject<{
-		src: import('astro/zod').ZodString;
-		width: import('astro/zod').ZodNumber;
-		height: import('astro/zod').ZodNumber;
-		format: import('astro/zod').ZodUnion<
-			[
-				import('astro/zod').ZodLiteral<'png'>,
-				import('astro/zod').ZodLiteral<'jpg'>,
-				import('astro/zod').ZodLiteral<'jpeg'>,
-				import('astro/zod').ZodLiteral<'tiff'>,
-				import('astro/zod').ZodLiteral<'webp'>,
-				import('astro/zod').ZodLiteral<'gif'>,
-				import('astro/zod').ZodLiteral<'svg'>,
-				import('astro/zod').ZodLiteral<'avif'>,
-			]
-		>;
-	}>;
-
-	type BaseSchemaWithoutEffects =
-		| import('astro/zod').AnyZodObject
-		| import('astro/zod').ZodUnion<[BaseSchemaWithoutEffects, ...BaseSchemaWithoutEffects[]]>
-		| import('astro/zod').ZodDiscriminatedUnion<string, import('astro/zod').AnyZodObject[]>
-		| import('astro/zod').ZodIntersection<BaseSchemaWithoutEffects, BaseSchemaWithoutEffects>;
-
-	type BaseSchema =
-		| BaseSchemaWithoutEffects
-		| import('astro/zod').ZodEffects<BaseSchemaWithoutEffects>;
-
-	export type SchemaContext = { image: ImageFunction };
-
-	type DataCollectionConfig<S extends BaseSchema> = {
-		type: 'data';
-		schema?: S | ((context: SchemaContext) => S);
-	};
-
-	type ContentCollectionConfig<S extends BaseSchema> = {
-		type?: 'content';
-		schema?: S | ((context: SchemaContext) => S);
-	};
-
-	type CollectionConfig<S> = ContentCollectionConfig<S> | DataCollectionConfig<S>;
-
-	export function defineCollection<S extends BaseSchema>(
-		input: CollectionConfig<S>
-	): CollectionConfig<S>;
 
 	type AllValuesOf<T> = T extends any ? T[keyof T] : never;
 	type ValidContentEntrySlug<C extends keyof ContentEntryMap> = AllValuesOf<
@@ -185,62 +136,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"activate-newsletter.mdx": {
-	id: "activate-newsletter.mdx";
-  slug: "activate-newsletter";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"astro-3-snipcart-starter-template-nebulix-start-your-online-store-in-minutes.mdx": {
-	id: "astro-3-snipcart-starter-template-nebulix-start-your-online-store-in-minutes.mdx";
-  slug: "astro-3-snipcart-starter-template-nebulix-start-your-online-store-in-minutes";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"contact-form.mdx": {
-	id: "contact-form.mdx";
-  slug: "contact-form";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"how-to-customize-the-theme.mdx": {
-	id: "how-to-customize-the-theme.mdx";
-  slug: "how-to-customize-the-theme";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"page-builder-blocks.mdx": {
-	id: "page-builder-blocks.mdx";
-  slug: "page-builder-blocks";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"readme.mdx": {
-	id: "readme.mdx";
-  slug: "readme";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"roadmap.mdx": {
-	id: "roadmap.mdx";
-  slug: "roadmap";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
-"templates-and-page-styles.mdx": {
-	id: "templates-and-page-styles.mdx";
-  slug: "templates-and-page-styles";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".mdx"] };
 };
 "config": {
 "about.mdx": {
@@ -248,80 +143,59 @@ declare module 'astro:content' {
   slug: "about";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "blog.mdx": {
 	id: "blog.mdx";
   slug: "blog";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "contact.mdx": {
 	id: "contact.mdx";
   slug: "contact";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "icons.mdx": {
 	id: "icons.mdx";
   slug: "icons";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "navigation.mdx": {
 	id: "navigation.mdx";
   slug: "navigation";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "project.mdx": {
 	id: "project.mdx";
   slug: "project";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "shop.mdx": {
 	id: "shop.mdx";
   slug: "shop";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 "style.mdx": {
 	id: "style.mdx";
   slug: "style";
   body: string;
   collection: "config";
-  data: any
+  data: InferEntrySchema<"config">
 } & { render(): Render[".mdx"] };
 };
 "menu": {
-"coctails.mdx": {
-	id: "coctails.mdx";
-  slug: "coctails";
-  body: string;
-  collection: "menu";
-  data: any
-} & { render(): Render[".mdx"] };
-"drinks.mdx": {
-	id: "drinks.mdx";
-  slug: "drinks";
-  body: string;
-  collection: "menu";
-  data: any
-} & { render(): Render[".mdx"] };
-"virgin-coctails.mdx": {
-	id: "virgin-coctails.mdx";
-  slug: "virgin-coctails";
-  body: string;
-  collection: "menu";
-  data: any
-} & { render(): Render[".mdx"] };
 };
 "page": {
 "index.mdx": {
@@ -329,158 +203,46 @@ declare module 'astro:content' {
   slug: "index";
   body: string;
   collection: "page";
-  data: any
+  data: InferEntrySchema<"page">
 } & { render(): Render[".mdx"] };
 "license.mdx": {
 	id: "license.mdx";
   slug: "license";
   body: string;
   collection: "page";
-  data: any
+  data: InferEntrySchema<"page">
 } & { render(): Render[".mdx"] };
 };
 "product": {
-"buy-me-a-cocktail.mdx": {
-	id: "buy-me-a-cocktail.mdx";
-  slug: "buy-me-a-cocktail";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"buy-me-a-lambo.mdx": {
-	id: "buy-me-a-lambo.mdx";
-  slug: "buy-me-a-lambo";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-bean-bag.mdx": {
-	id: "cosmic-bean-bag.mdx";
-  slug: "cosmic-bean-bag";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-bucket.mdx": {
-	id: "cosmic-bucket.mdx";
-  slug: "cosmic-bucket";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-cap.mdx": {
-	id: "cosmic-cap.mdx";
-  slug: "cosmic-cap";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-dino.mdx": {
-	id: "cosmic-dino.mdx";
-  slug: "cosmic-dino";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-drago.mdx": {
-	id: "cosmic-drago.mdx";
-  slug: "cosmic-drago";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-hoodie.mdx": {
-	id: "cosmic-hoodie.mdx";
-  slug: "cosmic-hoodie";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-kitten.mdx": {
-	id: "cosmic-kitten.mdx";
-  slug: "cosmic-kitten";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-nebulix.mdx": {
-	id: "cosmic-nebulix.mdx";
-  slug: "cosmic-nebulix";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-t-shirt.mdx": {
-	id: "cosmic-t-shirt.mdx";
-  slug: "cosmic-t-shirt";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-water-bottle.mdx": {
-	id: "cosmic-water-bottle.mdx";
-  slug: "cosmic-water-bottle";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cosmic-wizard.mdx": {
-	id: "cosmic-wizard.mdx";
-  slug: "cosmic-wizard";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"cutie-beans.mdx": {
-	id: "cutie-beans.mdx";
-  slug: "cutie-beans";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"i-love-nebulix-t-shirt.mdx": {
-	id: "i-love-nebulix-t-shirt.mdx";
-  slug: "i-love-nebulix-t-shirt";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"nebulix-license.mdx": {
-	id: "nebulix-license.mdx";
-  slug: "nebulix-license";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"sneaker.mdx": {
-	id: "sneaker.mdx";
-  slug: "sneaker";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
-"starfunnel-license.mdx": {
-	id: "starfunnel-license.mdx";
-  slug: "starfunnel-license";
-  body: string;
-  collection: "product";
-  data: any
-} & { render(): Render[".mdx"] };
 };
 "project": {
+"berry-forest-2013.mdx": {
+	id: "berry-forest-2013.mdx";
+  slug: "berry-forest-2013";
+  body: string;
+  collection: "project";
+  data: InferEntrySchema<"project">
+} & { render(): Render[".mdx"] };
 "crafting-the-perfect-cosmic-mojito.mdx": {
 	id: "crafting-the-perfect-cosmic-mojito.mdx";
   slug: "crafting-the-perfect-cosmic-mojito";
   body: string;
   collection: "project";
-  data: any
+  data: InferEntrySchema<"project">
+} & { render(): Render[".mdx"] };
+"ishtar-legacy.mdx": {
+	id: "ishtar-legacy.mdx";
+  slug: "ishtar-legacy";
+  body: string;
+  collection: "project";
+  data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
 "project-a.mdx": {
 	id: "project-a.mdx";
   slug: "project-a";
   body: string;
   collection: "project";
-  data: any
+  data: InferEntrySchema<"project">
 } & { render(): Render[".mdx"] };
 };
 
@@ -492,5 +254,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	export type ContentConfig = typeof import("../src/content/config.js");
 }
