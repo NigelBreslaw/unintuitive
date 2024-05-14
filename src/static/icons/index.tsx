@@ -55,11 +55,26 @@ export const Icon: FC<IconName> = ({ alt, iconData, ...rest }) => {
 };
 
 import IconLogo1 from "./docker-logo.svg";
-import IconLogo2 from "./typescript-logo.svg";
-import IconLogo3 from "./react-native-logo.svg";
-import IconLogo4 from "./windows-logo.svg";
-import IconLogo5 from "./android-logo.svg";
-import IconLogo6 from "./apple-logo.svg";
+import IconLogo2 from "./html-logo.svg";
+import IconLogo3 from "./css-logo.svg";
+import IconLogo4 from "./typescript-logo.svg";
+import IconLogo5 from "./react-native-logo.svg";
+import IconLogo6 from "./windows-logo.svg";
+import IconLogo7 from "./android-logo.svg";
+import IconLogo8 from "./apple-logo.svg";
+import IconLogo9 from "./azure-logo.svg";
+import IconLogo10 from "./bash-logo.svg";
 
 // logos saved as svg export them as components
-export { IconLogo1, IconLogo2, IconLogo3, IconLogo4, IconLogo5, IconLogo6 };
+export {
+	IconLogo1,
+	IconLogo2,
+	IconLogo3,
+	IconLogo4,
+	IconLogo5,
+	IconLogo6,
+	IconLogo7,
+	IconLogo8,
+	IconLogo9,
+	IconLogo10,
+};

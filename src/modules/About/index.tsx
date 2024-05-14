@@ -22,17 +22,23 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
 					<S.AboutContentText>
 						<FadeIn>
 							<p>
-								I'm a nerdy introvert who loves to code and won't shut up about
-								the latest development technology. I thrive in small teams that
-								get things done and love to be around people who are passionate
-								about their work.
+								I'm a nerdy introvert who loves to code and won't stop talking
+								about the latest development technology. I thrive in small teams
+								that get things done and love to be around people who are
+								passionate about their work.
 							</p>
 
 							<h3>What I can do?</h3>
 							<p>
 								I deliver. Be it design concepts or commercial shipping
-								projects. I'm a great team player and a great communicator.
-								Unless my code is broken, then best leave me alone.
+								projects. I'm a great team player and communicator. Unless my
+								code is broken, then best leave me alone.
+							</p>
+							<p>
+								I'm all about bringing a human touch to technology. Apps should
+								be performant, easy to use and delight. Accessibility, motion
+								design, custom interactions and more are a hallmark of projects
+								I have touched.
 							</p>
 						</FadeIn>
 						<FadeIn>
