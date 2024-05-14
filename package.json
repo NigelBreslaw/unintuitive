@@ -10,25 +10,25 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.5.9",
-		"@astrojs/react": "^3.1.0",
-		"@emotion/react": "^11.11.4",
-		"@emotion/styled": "^11.11.0",
-		"@hookform/resolvers": "^3.3.4",
-		"aos": "^2.3.4",
-		"astro": "^4.5.8",
-		"axios": "^1.6.8",
-		"gsap": "^3.12.5",
-		"react-device-detect": "^2.2.3",
-		"react-hook-form": "^7.51.3",
-		"sitemap": "^7.1.1",
-		"swiper": "^11.1.1",
-		"typescript": "^5.4.3",
-		"vite-plugin-compression": "^0.5.1",
-		"yarn": "^1.22.22",
-		"zod": "^3.22.4"
+		"@astrojs/check": "0.6.0",
+		"@astrojs/react": "3.3.4",
+		"@emotion/react": "11.11.4",
+		"@emotion/styled": "11.11.5",
+		"@hookform/resolvers": "3.3.4",
+		"aos": "2.3.4",
+		"astro": "4.8.3",
+		"axios": "1.6.8",
+		"gsap": "3.12.5",
+		"react-device-detect": "2.2.3",
+		"react-hook-form": "7.51.4",
+		"sitemap": "7.1.1",
+		"swiper": "11.1.3",
+		"typescript": "5.4.5",
+		"vite-plugin-compression": "0.5.1",
+		"yarn": "1.22.22",
+		"zod": "3.23.8"
 	},
 	"devDependencies": {
-		"@types/aos": "^3.0.7"
+		"@types/aos": "3.0.7"
 	}
 }
