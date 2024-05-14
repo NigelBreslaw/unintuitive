@@ -21,11 +21,11 @@ export const ProjectsData = [
 			},
 		],
 		content: `
-            <h3>Free companion app for Destiny 2</h3>
+            <h3>Companion app for Destiny 2</h3>
             <p>
                 Destiny 2 is a console and PC online game. It has an API that allows players to manage their loot and play the game more efficiently. 
                 <br /> <br />
-                It's known for its commercial level mobile design, performance and usability. With 4.6 (iOS) and 4.4 (Android) star ratings.
+                It's known for its commercial level mobile design, performance and usability. With 4.6 (iOS) and 4.4 (Android) star ratings. I designed and developed the entire app in my spare time as a fun hobby project. It's been downloaded over 2 million times and has over 250'000 active users. It's been featured in the press, most notably by Forbes on multiple occasions.
             </p>
         `,
 	},
@@ -56,7 +56,7 @@ export const ProjectsData = [
 		content: `
             <h3>Early smart devices</h3>
             <p>
-                Before the iPhone there were communicators and before communicators there were PDA's (Personal Digital Assistants). When Psion morphed into Symbian I worked on various projects including the Nokia 9210. Then in 2022 I moved to Finland and worked on Nokia's touchscreen platform S90. Which included the 7710 smartphone.
+                Before the iPhone there were communicators and before communicators there were PDA's (Personal Digital Assistants). I worked on them all. When Psion morphed into Symbian I worked on various projects including the Nokia 9210. Then in 2022 I moved to Finland and worked on Nokia's touchscreen platform S90. Which included the 7710 smartphone.
                 <br /> <br />
                 3 years later in 2007 the iPhone was released, changed everything and these are now historical relics.
             </p>
