@@ -11,8 +11,8 @@ export const ProjectsData = [
 		},
 		links: [
 			{
-				title: "GitHub",
-				url: "https://github.com/NigelBreslaw/guardian-ghost",
+				title: "Check out the project on Github!",
+				link: "https://github.com/NigelBreslaw/guardian-ghost",
 			},
 		],
 		extraInfo: [
