@@ -87,7 +87,7 @@ export const ProjectsData = [
 		content: `
             <h3>Early smart devices</h3>
             <p>
-                Before the iPhone there were communicators and before communicators there were PDA's (Personal Digital Assistants). I worked on them all. When Psion morphed into Symbian I worked on various projects including the Nokia 9210. Then in 2022 I moved to Finland and worked on Nokia's touchscreen platform S90. Which included the 7710 smartphone.
+                Before the iPhone there were communicators and before communicators there were PDA's (Personal Digital Assistants). I worked on them all. When Psion morphed into Symbian I worked on various projects including the Nokia 9210. Then in 2002 I moved to Finland and worked on Nokia's touchscreen platform S90. Which included the 7710 smartphone.
                 <br /> <br />
                 3 years later in 2007 the iPhone was released, changed everything and these are now historical relics.
             </p>
