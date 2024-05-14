@@ -11,11 +11,11 @@ import type { FC } from "react";
  * <Image src="logo-dark" alt="logo" data-theme-el="dark" />
  */
 export const Logo: FC = () => {
-    return (
-        <S.LogoStyled>
-            <a href="/">
-                <span>Sven</span>
-            </a>
-        </S.LogoStyled>
-    );
+	return (
+		<S.LogoStyled>
+			<a href="/">
+				<span>Unintuitive</span>
+			</a>
+		</S.LogoStyled>
+	);
 };
