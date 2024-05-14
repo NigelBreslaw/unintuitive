@@ -77,7 +77,7 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
 						<FadeIn delay={0.3}>
 							<Image
 								srcLocal="NigelImg"
-								alt="sven doe"
+								alt="Nigel Breslaw"
 								width={500}
 								height={500}
 							/>

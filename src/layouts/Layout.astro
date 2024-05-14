@@ -6,8 +6,8 @@ import { Header } from "@modules/Header";
 import { Footer } from "@modules/Footer";
 
 interface Props {
-    title: string;
-    description: string;
+	title: string;
+	description: string;
 }
 
 const { title, description } = Astro.props;
@@ -32,9 +32,9 @@ const { title, description } = Astro.props;
 
         <meta name="color-scheme" content="light only" />
 
-        <meta property="og:url" content="https://codexcode.pl" />
+        <meta property="og:url" content="https://unintuitive.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="CodexCode" />
+        <meta property="og:title" content="Unintuitive" />
         <meta property="og:image" content={Preview.src} />
         <meta property="og:description" content={description} />
 
@@ -42,8 +42,8 @@ const { title, description } = Astro.props;
         <meta name="twitter:title" content="CodexCode" />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={Preview.src} />
-        <meta property="twitter:domain" content="codexcode.pl" />
-        <meta property="twitter:url" content="https://codexcode.pl" />
+        <meta property="twitter:domain" content="unintuitive.com" />
+        <meta property="twitter:url" content="https://unintuitive.com" />
         <title>{title}</title>
         <Global styles={NormalizeCSS} />
 
