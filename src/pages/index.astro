@@ -1,0 +1,23 @@
+---
+import { Hero } from "@modules/Hero";
+import Layout from "../layouts/Layout.astro";
+import { About } from "@modules/About";
+import { Projects } from "@modules/Projects";
+import { LogosSlider } from "@modules/LogosSlider";
+import { Contact } from "@modules/Contact";
+
+import { HomepageData } from "@modules/Projects/data/HomepageData";
+---
+
+<Layout
+    title="Homepage"
+    description="Sven Doe a frontend developer and designer based in Berlin with a 7-year commercial experience in the industry."
+>
+    <main class="page-content">
+        <Hero client:load />
+        <LogosSlider client:visible />
+        <About client:visible />
+        <Projects data={HomepageData} client:visible />
+        <Contact client:visible />
+    </main>
+</Layout>

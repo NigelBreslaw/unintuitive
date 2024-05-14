@@ -1,0 +1,77 @@
+---
+import {
+    AboutPageStyled,
+    AboutPageStyledBoxesWrapper,
+} from "@modules/About/styled";
+import Layout from "../layouts/Layout.astro";
+import { About as AboutModule } from "@modules/About";
+import { TextBox } from "@components/textBox";
+import { Container } from "@components/Container";
+import { FadeIn } from "@utils/animations/FadeIn";
+---
+
+<Layout
+    title="About"
+    description="Hi, Im Sven Joe, a full-stack developer from Berlin. I build web applications and websites for clients and myself."
+>
+    <main class="page-content">
+        <AboutModule hideExp={true} client:load />
+        <AboutPageStyled>
+            <FadeIn client:visible>
+                <Container>
+                    <h2>Programming languages &<br /> tools</h2>
+                    <AboutPageStyledBoxesWrapper>
+                        <TextBox variant="background-text" bgText="senior">
+                            <h4>React</h4>
+                            <p>3,5 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="mid">
+                            <h4>JavaScript</h4>
+                            <p>2 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Next.js</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="new">
+                            <h4>Figma</h4>
+                            <p>few months</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="senior">
+                            <h4>Redux</h4>
+                            <p>1.5 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="mid">
+                            <h4>Photoshop</h4>
+                            <p>4 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Gulp</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="new">
+                            <h4>Webpack</h4>
+                            <p>few months</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="senior">
+                            <h4>Node.js</h4>
+                            <p>3,5 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="mid">
+                            <h4>Astro.js</h4>
+                            <p>2 years</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="junior">
+                            <h4>Next.js</h4>
+                            <p>1 year</p>
+                        </TextBox>
+                        <TextBox variant="background-text" bgText="new">
+                            <h4>Vue</h4>
+                            <p>few months</p>
+                        </TextBox>
+                    </AboutPageStyledBoxesWrapper>
+                </Container>
+            </FadeIn>
+        </AboutPageStyled>
+    </main>
+</Layout>
