@@ -1,8 +1,36 @@
-import { History, Adidas, Puma } from "@static/images";
+import { History, Ishtar } from "@static/images";
 
 export const ProjectsData = [
 	{
-		title: "Project nike",
+		title: "Ishtar Commander",
+		image: {
+			src: Ishtar.src,
+			width: Ishtar.width,
+			height: Ishtar.height,
+			alt: "Ishtar Commander",
+		},
+		links: [],
+		extraInfo: [
+			{
+				title: "Cross Platform iOS and Android",
+				description: "Developed in ZingStudio.io",
+			},
+			{
+				title: "Stats",
+				description: "2 million downloads. ~250'000 active users",
+			},
+		],
+		content: `
+            <h3>Free companion app for Destiny 2</h3>
+            <p>
+                Destiny 2 is a console and PC online game. It has an API that allows players to manage their loot and play the game more efficiently. 
+                <br /> <br />
+                It's known for its commercial level mobile design, performance and usability. With 4.6 (iOS) and 4.4 (Android) star ratings.
+            </p>
+        `,
+	},
+	{
+		title: "Pre History",
 		image: {
 			src: History.src,
 			width: History.width,
@@ -31,263 +59,6 @@ export const ProjectsData = [
                 Before the iPhone there were communicators and before communicators there were PDA's (Personal Digital Assistants). When Psion morphed into Symbian I worked on various projects including the Nokia 9210. Then in 2022 I moved to Finland and worked on Nokia's touchscreen platform S90. Which included the 7710 smartphone.
                 <br /> <br />
                 3 years later in 2007 the iPhone was released, changed everything and these are now historical relics.
-            </p>
-        `,
-	},
-	{
-		title: "Project adidas",
-		image: {
-			src: Adidas.src,
-			width: Adidas.width,
-			height: Adidas.height,
-			alt: "Project adidas",
-		},
-		links: [
-			{
-				title: "Live Preview",
-				link: "https://www.adidas.com",
-			},
-			{
-				title: "Source Code",
-				link: "https://github.com",
-			},
-		],
-		extraInfo: [
-			{
-				title: "Stack",
-				description: "React, TypeScript, Styled Components, Strapi",
-			},
-			{
-				title: "Data",
-				description: "2024-01-01",
-			},
-			{
-				title: "Client",
-				description: "Adidas",
-			},
-		],
-		content: `
-            <h3>Adidas Landing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate.
-            </p>
-        `,
-	},
-	{
-		title: "Project puma",
-		image: {
-			src: Puma.src,
-			width: Puma.width,
-			height: Puma.height,
-			alt: "Project Puma",
-		},
-		links: [
-			{
-				title: "Live Preview",
-				link: "https://www.puma.com",
-			},
-			{
-				title: "Source Code",
-				link: "https://github.com",
-			},
-		],
-		extraInfo: [
-			{
-				title: "Stack",
-				description: "React, TypeScript, Styled Components, Strapi",
-			},
-			{
-				title: "Data",
-				description: "2024-01-01",
-			},
-			{
-				title: "Client",
-				description: "Puma",
-			},
-		],
-		content: `
-            <h3>Puma Landing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate.
-            </p>
-        `,
-	},
-	{
-		title: "Project Puma",
-		image: {
-			src: Puma.src,
-			width: Puma.width,
-			height: Puma.height,
-			alt: "Project Puma",
-		},
-		links: [
-			{
-				title: "Live Preview",
-				link: "https://www.puma.com",
-			},
-			{
-				title: "Source Code",
-				link: "https://github.com",
-			},
-		],
-		extraInfo: [
-			{
-				title: "Stack",
-				description: "React, TypeScript, Styled Components, Strapi",
-			},
-			{
-				title: "Data",
-				description: "2024-01-01",
-			},
-			{
-				title: "Client",
-				description: "Puma",
-			},
-		],
-		content: `
-            <h3>Puma Landing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate.
-            </p>
-        `,
-	},
-
-	{
-		title: "Project adidas",
-		image: {
-			src: Adidas.src,
-			width: Adidas.width,
-			height: Adidas.height,
-			alt: "Project adidas",
-		},
-		links: [
-			{
-				title: "Live Preview",
-				link: "https://www.adidas.com",
-			},
-			{
-				title: "Source Code",
-				link: "https://github.com",
-			},
-		],
-		extraInfo: [
-			{
-				title: "Stack",
-				description: "React, TypeScript, Styled Components, Strapi",
-			},
-			{
-				title: "Data",
-				description: "2024-01-01",
-			},
-			{
-				title: "Client",
-				description: "Adidas",
-			},
-		],
-		content: `
-            <h3>Adidas Landing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate.
-            </p>
-        `,
-	},
-
-	{
-		title: "Project adidas",
-		image: {
-			src: Adidas.src,
-			width: Adidas.width,
-			height: Adidas.height,
-			alt: "Project adidas",
-		},
-		links: [
-			{
-				title: "Live Preview",
-				link: "https://www.adidas.com",
-			},
-			{
-				title: "Source Code",
-				link: "https://github.com",
-			},
-		],
-		extraInfo: [
-			{
-				title: "Stack",
-				description: "React, TypeScript, Styled Components, Strapi",
-			},
-			{
-				title: "Data",
-				description: "2024-01-01",
-			},
-			{
-				title: "Client",
-				description: "Adidas",
-			},
-		],
-		content: `
-            <h3>Adidas Landing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Quisquam
-                voluptates, voluptate.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quisquam voluptates,
-                voluptate.
             </p>
         `,
 	},

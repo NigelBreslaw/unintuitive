@@ -8,7 +8,7 @@ export const ImageModalStyled = styled.div`
 `;
 
 export const ImageModalContent = styled.div<{
-    $isOpen: boolean;
+	$isOpen: boolean;
 }>`
     z-index: 11;
     display: flex;
@@ -23,8 +23,8 @@ export const ImageModalContent = styled.div<{
     align-items: center;
 
     ${({ $isOpen }) =>
-        $isOpen &&
-        `
+			$isOpen &&
+			`
             display: flex;
             opacity: 1;
             visibility: visible;
@@ -84,8 +84,8 @@ export const ImageModalImage = styled.div`
 
     img {
         width: 100%;
-        height: 40vw;
-        max-height: 450px;
+        height: 50vw;
+        max-height: 600px;
 
         object-fit: cover;
     }

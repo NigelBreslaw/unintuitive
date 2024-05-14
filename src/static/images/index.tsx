@@ -3,7 +3,7 @@ import LogoImage from "./logo.webp";
 import Preview from "./preview.webp";
 import NigelImg from "./nigel.jpg";
 import History from "./history.webp";
-import Adidas from "./adidas.webp";
+import Ishtar from "./ishtar-commander.webp";
 import Puma from "./puma.webp";
 import Puma2 from "./puma-2.webp";
 
@@ -12,7 +12,7 @@ export const images = {
 	preview: Preview,
 	NigelImg: NigelImg,
 	history: History,
-	adidas: Adidas,
+	ishtar: Ishtar,
 	puma: Puma,
 	puma2: Puma2,
 };
@@ -64,4 +64,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, Adidas, History, Puma, Puma2 };
+export { Preview, Ishtar, History, Puma, Puma2 };
