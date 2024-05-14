@@ -4,7 +4,7 @@ import Preview from "./preview.webp";
 import NigelImg from "./nigel.jpg";
 import History from "./history.webp";
 import Ishtar from "./ishtar-commander.webp";
-import Puma from "./puma.webp";
+import GuardianGhost from "./GG.webp";
 import Puma2 from "./puma-2.webp";
 
 export const images = {
@@ -13,7 +13,7 @@ export const images = {
 	NigelImg: NigelImg,
 	history: History,
 	ishtar: Ishtar,
-	puma: Puma,
+	guardianGhost: GuardianGhost,
 	puma2: Puma2,
 };
 
@@ -64,4 +64,4 @@ export const Image: FC<ImageProps> = ({
 };
 
 // default export of the images
-export { Preview, Ishtar, History, Puma, Puma2 };
+export { Preview, Ishtar, History, GuardianGhost, Puma2 };

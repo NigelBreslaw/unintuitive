@@ -1,6 +1,37 @@
-import { History, Ishtar } from "@static/images";
+import { History, Ishtar, GuardianGhost } from "@static/images";
 
 export const ProjectsData = [
+	{
+		title: "Guardian Ghost",
+		image: {
+			src: GuardianGhost.src,
+			width: GuardianGhost.width,
+			height: GuardianGhost.height,
+			alt: "Guardian Ghost",
+		},
+		links: [
+			{
+				title: "GitHub",
+				url: "https://github.com/NigelBreslaw/guardian-ghost",
+			},
+		],
+		extraInfo: [
+			{
+				title: "Rect Native: Universal app",
+				description: "Web, Android and iOS",
+			},
+		],
+		content: `
+            <h3>React Native showcase</h3>
+            <p>
+                Built in four months this is a portfolio piece showcasing my skills in React Native. The github repo demonstrates full automated deployment to TestFlight, Google Play and Web. The project is a tooled monorepo with automated dependency updating and CI.
+                <br /> <br />
+                Destiny 2 is getting a huge update on June 4th called "The Final Shape". This app will be ready for download and will replace Ishtar Commander.
+
+				Some quick stats. App download is ~13MB Android, 20MB iOS and 2MB Web. It runs the bleeding edge version of React Native 0.74 and Expo 51.
+            </p>
+        `,
+	},
 	{
 		title: "Ishtar Commander",
 		image: {
