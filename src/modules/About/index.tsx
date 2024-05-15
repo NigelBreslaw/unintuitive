@@ -22,10 +22,12 @@ export const About: FC<AboutProps> = ({ hideExp }) => {
 					<S.AboutContentText>
 						<FadeIn>
 							<p>
-								I'm a nerdy introvert who loves to code and won't stop talking
-								about the latest development technology. I thrive in small teams
-								that get things done and love to be around people who are
-								passionate about their work.
+								With 25 years of commercial experience, I specialise in creating
+								applications that captivate millions of users. My journey
+								combines a rich background in UX design with cutting-edge
+								cross-platform software development skills. Hands-on development
+								is my true calling, and as an introvert who loves to code, I
+								won’t stop talking about the latest technological innovations.
 							</p>
 
 							<h3>What I can do?</h3>
