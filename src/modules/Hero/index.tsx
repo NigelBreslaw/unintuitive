@@ -23,10 +23,10 @@ export const Hero: FC = () => {
 						<S.PreHeading data-aos="fade-up">
 							Hi, I'm <strong>Nigel Breslaw</strong>
 						</S.PreHeading>
-						<S.HeroTitle>Mobile Developer / Designer</S.HeroTitle>
+						<S.HeroTitle>App Developer / UX Designer</S.HeroTitle>
 						<p>
-							I'm an <b>app developer</b> and <b>designer</b> based in Oulu with{" "}
-							<b>25-years</b> commercial experience.
+							I'm a cross platform <b>app developer</b> and <b>designer</b>{" "}
+							based in Oulu with <b>25-years</b> commercial experience.
 						</p>
 					</FadeIn>
 					<FadeIn delay={0.3}>
