@@ -1,4 +1,4 @@
-import { type FC, useRef, useMemo } from "react";
+import { type FC, useMemo } from "react";
 import { Container } from "@components/Container";
 import * as S from "./styled";
 import { ImageModal } from "@components/ImageModal";
@@ -60,13 +60,13 @@ export const Projects: FC<ProjectsProps> = ({ data }) => {
 				</S.ProjectHeading>
 
 				<S.ProjectsContent>{slides}</S.ProjectsContent>
-				{data.length <= 6 && (
+				{/* {data.length <= 6 && (
 					<FadeIn>
 						<S.ProjectButton link="/projects" align="center">
 							View More
 						</S.ProjectButton>
 					</FadeIn>
-				)}
+				)} */}
 			</Container>
 		</S.ProjectsStyled>
 	);
