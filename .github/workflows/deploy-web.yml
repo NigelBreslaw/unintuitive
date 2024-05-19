@@ -1,0 +1,32 @@
+on:
+  push:
+    branches: [main]
+    paths:
+      - "ReleaseNotes/**"
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v4.1.6
+      - uses: pnpm/action-setup@v4.0.0
+        with:
+          version: 9.1.1
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: build # Plus workaround cloudflare not uploading the node_modules folder
+        run: |
+          pnpm build
+      - name: deploy website
+        uses: cloudflare/pages-action@v1.5.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: gg-app
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
