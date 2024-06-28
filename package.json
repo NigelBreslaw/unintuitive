@@ -6,6 +6,7 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro check && astro build && node sitemap.cjs",
+		"build:ci": "turbo build  --remote-only --api=$TURBO_URL --token=$TURBO_CODE --team=CI",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
@@ -34,5 +35,6 @@
 	"devDependencies": {
 		"@types/aos": "3.0.7",
 		"turbo": "^2.0.5"
-	}
+	},
+	"packageManager": "pnpm@9.4.0"
 }
