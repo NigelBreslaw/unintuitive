@@ -6,6 +6,7 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro check && astro build && node sitemap.cjs",
+		"build:ci": "turbo build  --remote-only --api=$TURBO_URL --token=$TURBO_CODE --team=CI",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
@@ -27,12 +28,13 @@
 		"react-hook-form": "7.52.0",
 		"sitemap": "8.0.0",
 		"swiper": "11.1.3",
-		"typescript": "5.4.5",
+		"typescript": "5.5.2",
 		"vite-plugin-compression": "0.5.1",
 		"zod": "3.23.8"
 	},
 	"devDependencies": {
 		"@types/aos": "3.0.7",
 		"turbo": "^2.0.5"
-	}
+	},
+	"packageManager": "pnpm@9.4.0"
 }
