@@ -1,3 +1,4 @@
 19.5.2024 update. Now deployed via .github actions...
 28.6.2024 updated demo.json with Final Shape profile data.
 30.6.2024 Correct phone number in CV.
+9.7.2024 Update deps and fixed CI blocker.
