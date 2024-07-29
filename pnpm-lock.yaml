@@ -51,8 +51,8 @@ importers:
         specifier: 8.0.0
         version: 8.0.0
       swiper:
-        specifier: 11.1.5
-        version: 11.1.5
+        specifier: 11.1.8
+        version: 11.1.8
       typescript:
         specifier: 5.5.3
         version: 5.5.3
@@ -1963,8 +1963,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  swiper@11.1.5:
-    resolution: {integrity: sha512-JJQWFXdxiMGC2j6ZGTYat5Z7NN9JORJBgHp0/joX9uPod+cRj0wr5H5VnWSNIz9JeAamQvYKaG7aFrGHIF9OEg==}
+  swiper@11.1.8:
+    resolution: {integrity: sha512-sBFp7fA+IfZ/7BMcg8/JSEqDD1qZXBUyliT76yk3zIYVu2fMwFVAghhAJ9vBM5tJUtHW5qcD0pmeEGQs1EK14w==}
     engines: {node: '>= 4.7.0'}
 
   to-fast-properties@2.0.0:
@@ -4515,7 +4515,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  swiper@11.1.5: {}
+  swiper@11.1.8: {}
 
   to-fast-properties@2.0.0: {}
 
