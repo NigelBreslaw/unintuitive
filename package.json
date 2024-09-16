@@ -11,13 +11,13 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.8.1",
-		"@astrojs/react": "3.6.0",
+		"@astrojs/check": "0.9.3",
+		"@astrojs/react": "3.6.2",
 		"@emotion/react": "11.11.4",
 		"@emotion/styled": "11.11.5",
 		"@hookform/resolvers": "3.9.0",
 		"aos": "2.3.4",
-		"astro": "4.11.5",
+		"astro": "4.15.6",
 		"axios": "1.7.2",
 		"gsap": "3.12.5",
 		"react": "18.3.1",
